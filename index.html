@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tirana Ward | Web Developer Portfolio</title>
+
+    <meta
+      name="description"
+      content="Tirana Ward — Web Developer Portfolio. HTML, CSS, JavaScript projects and professional background."
+    />
+
+    <style>
+      :root {
+        --bg: #f4f4f4;
+        --text: #333;
+        --card: #ffffff;
+        --brand: #34495e;
+        --brand2: #2c3e50;
+        --accent: #1abc9c;
+        --muted: #666;
+        --shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        --radius: 12px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg);
+        color: var(--text);
+      }
+
+      header {
+        background: var(--brand);
+        color: white;
+        padding: 28px 16px;
+        text-align: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.3em;
+      }
+
+      header p {
+        font-style: italic;
+        margin: 10px 0 0;
+      }
+
+      .cta-row {
+        margin-top: 16px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-weight: 700;
+        background: var(--accent);
+        color: #000;
+        text-decoration: none;
+      }
+
+      main {
+        max-width: 980px;
+        margin: 20px auto;
+        padding: 18px;
+        background: var(--card);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+      section {
+        margin-bottom: 24px;
+      }
+
+      section h2 {
+        font-size: 1.6em;
+        margin-bottom: 10px;
+        color: var(--brand2);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin: 10px 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+      }
+
+      .card {
+        border: 1px solid #e8e8e8;
+        border-radius: var(--radius);
+        padding: 14px;
+        background: #fff;
+      }
+
+      .tag {
+        display: inline-block;
+        font-size: 0.85em;
+        padding: 4px 10px;
+        border-radius: 999px;
+        background: #eef8f5;
+        margin-right: 6px;
+        margin-bottom: 6px;
+      }
+
+      .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+
+      .skill-box {
+        border: 1px solid #e8e8e8;
+        border-radius: var(--radius);
+        padding: 12px;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      footer {
+        text-align: center;
+        padding: 14px 10px;
+        background: var(--brand);
+        color: white;
+        margin-top: 18px;
+      }
+
+      footer a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      @media (max-width: 900px) {
+        .grid,
+        .skills {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Tirana Ward</h1>
+      <p>Web Developer Portfolio • From Military Logistics to Web Development</p>
+      <div class="cta-row">
+        <a class="btn" href="#projects">View Projects</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Blackjack Web App</h3>
+            <p>Interactive Blackjack game with clean UI and JavaScript-driven logic.</p>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <p>
+              <a href="https://github.com/tiranaward47"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                GitHub Repo
+              </a>
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Bethany’s Pie Shop</h3>
+            <p>Responsive storefront-style site focused on layout and branding.</p>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Responsive</span>
+            <p>
+              <a href="https://github.com/tiranaward47"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                GitHub Repo
+              </a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Skills Snapshot</h2>
+
+        <div class="skills">
+          <div class="skill-box">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-box">
+            <h3>Tools</h3>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>VS Code</li>
+              <li>Debugging & Testing</li>
+            </ul>
+          </div>
+
+          <div class="skill-box">
+            <h3>Strengths</h3>
+            <ul>
+              <li>Systems thinking</li>
+              <li>Discipline & execution</li>
+              <li>UI clarity & structure</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>About Me</h2>
+        <p>
+          After 15+ years in supply chain and logistics, I transitioned into web development to build digital systems—not just manage them. I’m currently enrolled in the Web Programming course at ABCO Technologies.
+        </p>
+        <p>
+          My military background trained me to stay resilient, solve problems under pressure, and execute consistently.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Want to collaborate or talk work? Reach me here:</p>
+
+        <ul>
+          <li>
+            Business Email:
+            <a href="mailto:tward@twarddigitalllc.com">
+              tward@twarddigitalllc.com
+            </a>
+          </li>
+
+          <li>
+            Personal Email:
+            <a href="mailto:tiranaward@gmail.com">
+              tiranaward@gmail.com
+            </a>
+          </li>
+
+          <li>
+            LinkedIn:
+            <a href="https://www.linkedin.com/in/tirana-ward-20047540"
+               target="_blank"
+               rel="noopener noreferrer">
+              linkedin.com/in/tirana-ward-20047540
+            </a>
+          </li>
+
+          <li>
+            GitHub:
+            <a href="https://github.com/tiranaward47"
+               target="_blank"
+               rel="noopener noreferrer">
+              github.com/tiranaward47
+            </a>
+          </li>
+
+          <li class="muted">
+            Location: Monticello, Arkansas
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        © 2026 Tirana Ward •
+        <a href="https://github.com/tiranaward47"
+           target="_blank"
+           rel="noopener noreferrer">
+          GitHub
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
